@@ -73,7 +73,7 @@ company-growth-check-in/
 
 ## Install
 
-### Option 1: Install Into Codex Skills
+### Codex
 
 Copy this repository into your Codex skills directory as:
 
@@ -89,15 +89,43 @@ C:\Users\<your-user>\.codex\skills\company-growth-check-in
 
 After installing the folder, restart Codex so it picks up the new skill.
 
-### Option 2: Install From GitHub With Codex
-
-If your Codex environment has the built-in skill installer, you can ask:
+If your Codex environment has the built-in skill installer, you can also ask:
 
 ```text
 Use $skill-installer to install https://github.com/fancydirty/company-growth-check-in
 ```
 
-Then restart Codex after installation.
+### OpenClaw
+
+OpenClaw can load skills from multiple locations. The simplest workspace-local install is:
+
+```text
+~/.openclaw/workspace/skills/company-growth-check-in
+```
+
+If your OpenClaw workspace is customized, use:
+
+```text
+<workspace>/skills/company-growth-check-in
+```
+
+If you want the skill to be shared across agents on the same machine, use:
+
+```text
+~/.openclaw/skills/company-growth-check-in
+```
+
+After adding the folder, start a new OpenClaw session so the skill is picked up.
+
+### Hermes Agent
+
+Hermes Agent uses a single source-of-truth skills directory:
+
+```text
+~/.hermes/skills/company-growth-check-in
+```
+
+After adding the folder, start a new Hermes session. If you need the skill immediately in the current session, reset the session first.
 
 ## How It Works
 
