@@ -56,6 +56,7 @@ The skill keeps returning to two questions:
 company-growth-check-in/
 |-- SKILL.md
 |-- README.md
+|-- RELEASE_NOTES.md
 |-- .gitignore
 |-- agents/
 |   `-- openai.yaml
@@ -69,6 +70,34 @@ company-growth-check-in/
     |-- daily-report-template.md
     `-- review-template.md
 ```
+
+## Install
+
+### Option 1: Install Into Codex Skills
+
+Copy this repository into your Codex skills directory as:
+
+```text
+~/.codex/skills/company-growth-check-in
+```
+
+On Windows, that is usually:
+
+```text
+C:\Users\<your-user>\.codex\skills\company-growth-check-in
+```
+
+After installing the folder, restart Codex so it picks up the new skill.
+
+### Option 2: Install From GitHub With Codex
+
+If your Codex environment has the built-in skill installer, you can ask:
+
+```text
+Use $skill-installer to install https://github.com/fancydirty/company-growth-check-in
+```
+
+Then restart Codex after installation.
 
 ## How It Works
 
@@ -125,6 +154,12 @@ Weekly review:
 
 ```text
 Use $company-growth-check-in and review this week from the saved reports.
+```
+
+End the discussion and write a report:
+
+```text
+Use $company-growth-check-in. Summary.
 ```
 
 ## Runtime Files And Privacy
