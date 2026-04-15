@@ -68,6 +68,7 @@ company-growth-check-in/
     |-- assessment-framework.md
     |-- bootstrap-template.md
     |-- daily-report-template.md
+    |-- heartbeat-template.md
     `-- review-template.md
 ```
 
@@ -151,6 +152,26 @@ If you want a softer setup, use heartbeat plus a small `HEARTBEAT.md` rule such 
 ```text
 If it is after 18:30 local time on a weekday and today's work review has not happened yet, nudge me to start $company-growth-check-in.
 ```
+
+You can start from the bundled template in:
+
+```text
+references/heartbeat-template.md
+```
+
+Copy its contents into your OpenClaw workspace `HEARTBEAT.md`:
+
+```text
+~/.openclaw/workspace/HEARTBEAT.md
+```
+
+or, if your workspace is customized:
+
+```text
+<workspace>/HEARTBEAT.md
+```
+
+Keep the file small. If no reminder is needed, the heartbeat should reply with `HEARTBEAT_OK`.
 
 Example `cron` command:
 
