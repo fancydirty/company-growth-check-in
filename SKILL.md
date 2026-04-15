@@ -65,6 +65,15 @@ The goal is to create a useful factual base before offering judgment.
 
 If the company is very early, private, or not publicly legible, rely on the user's facts and mark unknowns clearly.
 
+If research is weak, do not continue with a full discussion until you have at least this minimum fallback context:
+
+- company name
+- role title
+- what the company does
+- what the user most wants from the role
+- what would make the role clearly worth staying in
+- what would make the user start considering an exit
+
 Use the template in [references/bootstrap-template.md](references/bootstrap-template.md).
 
 ## Discussion Mode
@@ -239,7 +248,7 @@ If the user is still answering questions or the investigation is obviously ongoi
 
 - Do not moralize.
 - Do not assume the company is good or bad by default.
-- Do not confuse charisma, founder talk, or HR smoothing with evidence.
+- Do not confuse confidence, polished communication, or internal messaging with evidence.
 - Do not force the user to leave just because the company is messy.
 - Do not tell the user to stay just because the mission sounds strong.
 - Keep the focus on evidence, growth return, and decision quality.

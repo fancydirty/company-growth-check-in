@@ -6,6 +6,15 @@ If public information exists, draft what you can from research first. Then ask t
 
 If the company is too early, too private, or too unclear online, rely on the user's description and mark unknowns explicitly.
 
+Do not proceed to a full evaluation until you have, at minimum:
+
+- company name
+- role title
+- what the company does
+- what the user most wants from the role
+- what would make the role clearly worth staying in
+- what would make the user start considering an exit
+
 ## Output File
 
 Write to:
@@ -66,3 +75,5 @@ Preferred order:
 4. What do you most want to get from this role?
 5. What would make this role clearly worth staying in for you?
 6. What would make you start planning an exit?
+
+If public research was weak, explicitly tell the user which fields remain unknown before moving into discussion mode.
