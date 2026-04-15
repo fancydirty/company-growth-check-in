@@ -54,20 +54,20 @@ The skill keeps returning to two questions:
 
 ```text
 company-growth-check-in/
-├── SKILL.md
-├── README.md
-├── .gitignore
-├── agents/
-│   └── openai.yaml
-├── context/
-│   └── .gitkeep
-├── reports/
-│   └── .gitkeep
-└── references/
-    ├── assessment-framework.md
-    ├── bootstrap-template.md
-    ├── daily-report-template.md
-    └── review-template.md
+|-- SKILL.md
+|-- README.md
+|-- .gitignore
+|-- agents/
+|   `-- openai.yaml
+|-- context/
+|   `-- .gitkeep
+|-- reports/
+|   `-- .gitkeep
+`-- references/
+    |-- assessment-framework.md
+    |-- bootstrap-template.md
+    |-- daily-report-template.md
+    `-- review-template.md
 ```
 
 ## How It Works
