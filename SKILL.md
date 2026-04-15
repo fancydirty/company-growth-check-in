@@ -27,6 +27,7 @@ Common use cases:
 - A structured discussion about a confusing event with leadership, product, customers, or team dynamics
 - A weekly or monthly review based on saved daily reports
 - A first-time setup for a new company, role, or team
+- An optional scheduled reminder in agents that support heartbeat or cron-like automation
 
 Example prompts:
 
@@ -35,6 +36,8 @@ Example prompts:
 - "Use $company-growth-check-in and review this week from the saved reports."
 - "Use $company-growth-check-in to set up context for my new role."
 
+If the runtime platform supports proactive scheduling, the agent may also help the user set up a recurring reminder to run this skill.
+
 ## Operating Modes
 
 This skill supports three modes:
@@ -42,6 +45,31 @@ This skill supports three modes:
 - **Bootstrap mode**: gather or refresh company and role context
 - **Discussion mode**: agent-led daily or ad hoc check-in
 - **Review mode**: weekly or monthly synthesis from saved reports
+- **Reminder setup mode**: optional setup for recurring check-in reminders when the runtime supports heartbeat or cron-like scheduling
+
+## Reminder Setup Mode
+
+Use reminder setup mode only when the runtime platform clearly supports proactive scheduling.
+
+Examples:
+
+- OpenClaw heartbeat for periodic nudges
+- OpenClaw cron for exact daily reminder times
+- Hermes cron for exact daily reminder times
+
+The agent should not create a reminder silently. Ask the user first.
+
+Minimum questions:
+
+1. Do you want a recurring reminder for this check-in?
+2. Should it happen every day or weekdays only?
+3. What local time should it fire?
+
+Recommendation rules:
+
+- For an exact daily time, prefer cron-style scheduling.
+- For OpenClaw-style soft periodic awareness, heartbeat is also a good fit.
+- Keep the reminder prompt simple: remind the user to start `$company-growth-check-in` and begin by asking the first question.
 
 ## Bootstrap Mode
 

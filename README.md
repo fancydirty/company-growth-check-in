@@ -127,6 +127,52 @@ Hermes Agent uses a single source-of-truth skills directory:
 
 After adding the folder, start a new Hermes session. If you need the skill immediately in the current session, reset the session first.
 
+## Proactive Reminders
+
+If your agent platform supports scheduled or proactive turns, you can use this skill without having to remember the check-in manually every day.
+
+### OpenClaw
+
+OpenClaw supports both heartbeat and cron, but they are best used differently:
+
+- use **heartbeat** for periodic awareness and gentle nudges
+- use **cron** for an exact daily check-in time
+
+If you want a daily reminder at a specific local time, prefer cron.
+
+Example idea:
+
+```text
+At 18:30 every weekday, remind me to run $company-growth-check-in and start the check-in by asking the first question.
+```
+
+If you want a softer setup, use heartbeat plus a small `HEARTBEAT.md` rule such as:
+
+```text
+If it is after 18:30 local time on a weekday and today's work review has not happened yet, nudge me to start $company-growth-check-in.
+```
+
+### Hermes Agent
+
+Hermes Agent uses scheduled cron jobs for this kind of proactive workflow.
+
+Example idea:
+
+```text
+Every weekday at 18:30, ask me to start $company-growth-check-in and guide me through a short review of today's work.
+```
+
+### Suggested Agent Behavior
+
+If the agent knows it is running in a platform with scheduling support, it should ask once:
+
+- whether the user wants a recurring reminder
+- whether the reminder should happen every day or weekdays only
+- what local time the reminder should fire
+
+For exact timing, prefer cron-style scheduling.
+For soft periodic nudges in OpenClaw, heartbeat is also a good fit.
+
 ## How It Works
 
 ### 1. Bootstrap
