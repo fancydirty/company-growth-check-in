@@ -135,3 +135,7 @@ A role can be worthwhile even when a company is imperfect.
 A company can look promising while giving the user weak growth.
 
 This skill helps make that distinction visible through repeated, evidence-based check-ins.
+
+## License
+
+MIT
