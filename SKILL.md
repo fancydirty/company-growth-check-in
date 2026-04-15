@@ -1,6 +1,6 @@
 ---
 name: company-growth-check-in
-description: Use when the user explicitly invokes $company-growth-check-in to evaluate whether their current company or role is still worth staying in, whether they are still learning and growing, and how to turn daily work experience into better career decisions over time.
+description: Use when the user explicitly invokes $company-growth-check-in to evaluate whether their current company or role is still worth staying in, whether they are still learning and growing, and how to turn daily work experience into clearer career decisions over time.
 ---
 
 # Company Growth Check-In

@@ -1,5 +1,7 @@
 # Company Growth Check-In
 
+Turn daily work experience into clearer stay-or-leave career decisions.
+
 `company-growth-check-in` is a reusable AI skill for one ongoing question:
 
 **Is this company or role still worth staying in, and am I still getting meaningful growth from staying?**
@@ -15,6 +17,31 @@ The skill supports three modes:
 - **Review mode**: synthesize saved daily reports into weekly or monthly reviews
 
 The output is meant to help with decision quality, not loyalty, morale, or generic journaling.
+
+## Suggested GitHub Metadata
+
+**Repository name**
+
+- `company-growth-check-in`
+
+**Description**
+
+- `A reusable AI skill for deciding whether your current company or role is still worth staying in.`
+
+**Topics**
+
+- `career`
+- `career-growth`
+- `career-decisions`
+- `agent`
+- `ai-skill`
+- `reflection`
+- `check-in`
+- `work-journal`
+- `decision-making`
+- `job-evaluation`
+- `role-fit`
+- `company-fit`
 
 ## Core Question
 

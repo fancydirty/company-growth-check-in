@@ -1,4 +1,4 @@
 interface:
   display_name: "Company Growth Check-In"
-  short_description: "Assess whether a company or role is still worth staying in."
+  short_description: "Turn daily work experience into clearer stay-or-leave career decisions."
   default_prompt: "Use $company-growth-check-in. Ask me questions, help me assess whether this company or role is still worth staying in, and write the report when we are done."
