@@ -68,6 +68,8 @@ company-growth-check-in/
     |-- assessment-framework.md
     |-- bootstrap-template.md
     |-- daily-report-template.md
+    |-- heartbeat-example.md
+    |-- heartbeat-conservative-example.md
     |-- heartbeat-template.md
     `-- review-template.md
 ```
@@ -173,6 +175,34 @@ or, if your workspace is customized:
 
 Keep the file small. If no reminder is needed, the heartbeat should reply with `HEARTBEAT_OK`.
 With the bundled `tasks:` block, OpenClaw only runs the due reminder check and can skip the model call entirely with `reason=no-tasks-due` when nothing is due.
+
+If you want a ready-made file instead of composing your own:
+
+```text
+references/heartbeat-example.md
+references/heartbeat-conservative-example.md
+```
+
+Suggested OpenClaw heartbeat config for this skill:
+
+```json
+{
+  "agents": {
+    "defaults": {
+      "heartbeat": {
+        "every": "30m",
+        "target": "last",
+        "lightContext": true,
+        "isolatedSession": true,
+        "activeHours": { "start": "08:00", "end": "24:00" }
+      }
+    }
+  }
+}
+```
+
+Use the standard example if you want a normal end-of-day reminder.
+Use the conservative example if you only want reminders on days when the user was recently active in OpenClaw.
 
 Example `cron` command:
 
