@@ -15,7 +15,7 @@ Template:
 
 ## Overall Verdict
 
-One short paragraph on whether the startup became more useful, less useful, or simply clearer this week.
+One short paragraph on whether the company or role became more useful, less useful, or simply clearer this week.
 
 ## Recurring Positive Signals
 
@@ -29,13 +29,13 @@ One short paragraph on whether the startup became more useful, less useful, or s
 - risk 2
 - risk 3
 
-## What The User Is Actually Getting
+## Growth Return This Week
 
-- cash flow
+- skill growth
 - product exposure
+- business exposure
 - leadership exposure
-- go-to-market or sales exposure
-- founder lessons
+- career signal
 
 ## What Changed This Week
 
@@ -48,18 +48,18 @@ One short paragraph on whether the startup became more useful, less useful, or s
 Choose one:
 
 - trend is improving
-- trend is mixed but still useful
-- trend is getting worse
-- trend is no longer worth the cost
+- trend is mixed but useful
+- trend is weakening
+- trend no longer justifies staying
 
 ## Recommendation
 
 Choose one:
 
-- stay and keep extracting
-- stay, but watch closely
-- prepare exit while staying
-- exit soon
+- continue and invest
+- continue, but monitor
+- stay while building options
+- prepare exit
 
 ## Next Week Watchlist
 
@@ -81,7 +81,7 @@ Template:
 
 ## Overall Month Verdict
 
-One paragraph on what this month proved about the startup and about the user's current strategy.
+One paragraph on what this month proved about the company, the role, and the user's current strategy.
 
 ## Strongest Signals This Month
 
@@ -101,29 +101,29 @@ One paragraph on what this month proved about the startup and about the user's c
 - lesson 2
 - lesson 3
 
-## Is The Startup Still Worth Staying In
+## Is This Role Still Worth Staying In
 
 Answer directly and explain why in a short paragraph.
 
-## What Would Trigger Exit Preparation Next
+## What Would Trigger A Stronger Recommendation Next
 
 - trigger 1
 - trigger 2
 - trigger 3
 
-## Current Mode
+## Current Recommendation
 
 Choose one:
 
-- stay and keep extracting
-- stay, but watch closely
-- prepare exit while staying
-- exit soon
+- continue and invest
+- continue, but monitor
+- stay while building options
+- prepare exit
 ```
 
 ## Writing Guidance
 
 - Base the review on accumulated reports, not vague memory.
 - Highlight repeated patterns, not isolated noise.
-- Preserve the timeline of whether the company is getting better, worse, or merely more legible.
-- Focus on usefulness to the user, not abstract company quality.
+- Preserve whether the situation is improving, weakening, or only becoming clearer.
+- Focus on usefulness to the user, not abstract company prestige.

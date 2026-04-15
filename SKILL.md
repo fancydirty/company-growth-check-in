@@ -1,225 +1,163 @@
 ---
-name: startup-reality-check
-description: Use when the user explicitly invokes $startup-reality-check to discuss whether a startup job or early-stage company is still worth staying in, what signals matter today, what can still be learned from it, and whether it is time to keep extracting value or prepare exit.
+name: company-growth-check-in
+description: Use when the user explicitly invokes $company-growth-check-in to evaluate whether their current company or role is still worth staying in, whether they are still learning and growing, and how to turn daily work experience into better career decisions over time.
 ---
 
-# Startup Reality Check
+# Company Growth Check-In
 
 ## Overview
 
-Use this skill to help a user treat a startup job as a training ground instead of a belief system.
+Use this skill to help a user evaluate a company or role with clear evidence instead of momentum, anxiety, or vague hope.
 
-The goal is not to decide whether the company is "good." The goal is to judge, from concrete daily facts, whether the company is still worth exploiting for cash flow, product exposure, sales exposure, and execution experience.
+This skill is for ongoing career judgment, not journaling for its own sake. All discussion, notes, daily reports, and weekly or monthly reviews exist to answer two questions:
 
-All discussion, note-taking, daily reports, and weekly or monthly reviews exist for one reason:
-
-- to decide whether this company is still worth staying in
-- to decide whether the user is still getting meaningful growth from staying
-
-Do not let the workflow drift into journaling for its own sake. The workflow exists to support better stay-or-leave judgment and clearer growth assessment over time.
+- Is this company or role still worth staying in?
+- Is the user still getting meaningful growth from staying?
 
 ## When To Use
 
 The simplest rule is:
 
-- If the user explicitly says `$startup-reality-check`, use this skill.
+- If the user explicitly says `$company-growth-check-in`, use this skill.
 
-You can also use it when the user's request is obviously the same task, even without the exact skill name.
+Common use cases:
 
-Typical use cases:
-
-- A daily or weekly reality check on whether the startup is still worth staying in
-- A weekly or monthly review based on accumulated daily reports
-- A judgment about whether new company behavior is a red flag or just normal early-stage chaos
-- Help extracting product, execution, sales, or founder lessons from today's events
-- A stay-or-leave recommendation based on recent observations
-- A way to convert messy work experiences into career signal and future founder knowledge
+- A daily or weekly check-in on whether the current company is still worth staying in
+- A review of whether the user is still learning enough from the role
+- A structured discussion about a confusing event with leadership, product, customers, or team dynamics
+- A weekly or monthly review based on saved daily reports
+- A first-time setup for a new company, role, or team
 
 Example prompts:
 
-- "Based on what happened today, is this company still worth staying in?"
-- "I talked to the CEO and CPO again. What are the real signals here?"
-- "Turn today's startup mess into lessons I can use later when I build my own product."
-- "Give me a weekly checkpoint on whether I am learning enough to justify staying."
+- "Use $company-growth-check-in."
+- "Use $company-growth-check-in. I want to review what happened today."
+- "Use $company-growth-check-in and review this week from the saved reports."
+- "Use $company-growth-check-in to set up context for my new role."
 
-## Required Input
+## Operating Modes
 
-This skill defaults to an interviewer mode.
+This skill supports three modes:
 
-If the user invokes `$startup-reality-check` without giving enough detail, the agent should begin by asking the first question instead of starting with analysis.
+- **Bootstrap mode**: gather or refresh company and role context
+- **Discussion mode**: agent-led daily or ad hoc check-in
+- **Review mode**: weekly or monthly synthesis from saved reports
 
-If the user already gave facts, use those facts and then ask the next question.
+## Bootstrap Mode
 
-If the user asks for a weekly or monthly review, read the relevant report files from `reports/` first, then synthesize instead of starting a fresh interview.
+Use bootstrap mode when:
 
-Useful inputs include:
+- the skill is being used for the first time
+- the company changed
+- the role changed
+- the saved context is missing or clearly stale
 
-- What happened today or this week
-- What leaders said and what they actually did
-- Product progress, user feedback, customer conversations, or launch movement
-- Hiring, budget, equipment, tooling, payroll, or other cash signals
-- What the user worked on and what they learned
-- Any new friction: HR, devices, contracts, KPI, politics, chaos, or broken promises
+The goal is to create a useful factual base before offering judgment.
 
-Do not anchor on a single emotional event unless it changes the underlying situation.
+### Bootstrap Workflow
 
-If the user already gave enough detail, do not ask extra setup questions. Move straight into analysis.
+1. Ask for the minimum core identifiers:
+   - company name
+   - role title
+2. If the company is public enough, research basic public facts.
+3. Ask the user to confirm, correct, or fill gaps.
+4. Save the current context to `context/current-engagement.md`.
 
-## Workflow
+If the company is very early, private, or not publicly legible, rely on the user's facts and mark unknowns clearly.
 
-This skill should feel like a structured discussion, not a lecture.
+Use the template in [references/bootstrap-template.md](references/bootstrap-template.md).
 
-There are two modes:
+## Discussion Mode
 
-- **Discussion mode**: used for a fresh daily check-in
-- **Review mode**: used for weekly or monthly synthesis from saved reports
+This skill should feel like a structured conversation, not a lecture.
 
 Default interaction style:
 
-- Agent asks first
-- Ask one focused question at a time
-- Wait for the user's reply before continuing
-- Use the reply to update the picture
-- Do not dump the full framework immediately
-- Only give a full verdict when enough evidence exists or when the user asks for a summary
+- agent asks first
+- ask one focused question at a time
+- wait for the user's reply before continuing
+- use the reply to refine the picture
+- keep replies short during the live discussion
+- do not give a full verdict too early
 
 ### Opening Move
 
-When the user explicitly invokes `$startup-reality-check`, start with a question unless they already provided a detailed situation summary.
+If the user invokes `$company-growth-check-in` without enough detail, start with one question instead of starting with analysis.
 
 Preferred opening question:
 
 - "What is the single most important thing that happened at work in the last two days?"
 
-Alternative opening questions when needed:
+Alternative opening questions:
 
-- "What happened today that made you question whether this startup is still worth staying in?"
+- "What happened today that made you want to check in on this role?"
 - "What is the one event this week that best reveals the company's real condition?"
-- "The last time you talked to leadership, what did they say, and what did they actually do afterward?"
+- "The last time you talked to leadership, what did they say, and what actually changed afterward?"
 
 Do not open with a verdict.
 Do not open with a framework dump.
 Do not ask multiple broad questions at once.
 
-### Review Mode
+### Discussion Workflow
 
-If the user asks for a weekly or monthly review:
-
-1. Read the relevant files under `reports/`
-2. Identify recurring patterns across money, product, leadership, learning density, and exit risk
-3. Summarize what changed over time
-4. State whether the startup is becoming more useful, less useful, or simply clearer
-5. Write the result to:
-   - `reports/weekly-review-YYYY-MM-DD.md`
-   - `reports/monthly-review-YYYY-MM.md`
-
-Use the template in [references/review-template.md](references/review-template.md).
-
-### 1. Build the factual timeline through questions
-
-Start by summarizing what the user already said into plain facts. Then ask the next most useful question.
-
-Separate:
-
-- what was promised
-- what actually happened
-- what remains unknown
-
-If the user mixes inference and fact, label the inference clearly.
-
-Good question types:
-
-- "What exactly happened?"
-- "What did they say they would do next?"
-- "What changed after that?"
-- "Did any of this affect product, money, or your learning?"
-
-Avoid asking many questions at once unless the user explicitly wants a full dump.
+1. Summarize the user's facts in plain language.
+2. Separate:
+   - what was promised
+   - what actually happened
+   - what remains unknown
+3. Ask the next most useful question.
+4. Judge the situation on two axes:
+   - **Company or role reality**: is there evidence of useful progress, clarity, and viability?
+   - **User growth return**: is the user still getting enough learning, exposure, and career value from staying?
+5. When enough evidence exists, give a narrow recommendation.
 
 Question order should usually be:
 
 1. What happened?
 2. What was promised?
 3. What actually changed afterward?
-4. What did this reveal about money, product, leadership, or your learning value?
+4. What did this reveal about the company, the role, or the user's growth?
 
-### 2. Judge the company on two axes
+Use the framework in [references/assessment-framework.md](references/assessment-framework.md) when a deeper pass is needed.
 
-Always evaluate both:
+## Review Mode
 
-- **Company viability**: Is there evidence this startup can turn story into product and product into money?
-- **User value extraction**: Even if the company is weak, is the user still getting enough cash, product exposure, business exposure, or founder education to justify staying for now?
+If the user asks for a weekly or monthly review:
 
-### 3. Score the signal quality
+1. Read `context/current-engagement.md` first if it exists.
+2. Read the relevant files under `reports/`.
+3. Identify recurring patterns across:
+   - operational reality
+   - product or business movement
+   - leadership quality
+   - learning density
+   - career optionality
+4. Summarize what changed over time.
+5. State whether the situation is becoming more useful, less useful, or simply clearer.
+6. Write the result to:
+   - `reports/weekly-review-YYYY-MM-DD.md`
+   - `reports/monthly-review-YYYY-MM.md`
 
-Use the framework in [references/assessment-framework.md](references/assessment-framework.md) when the user needs a deeper pass.
+Use the template in [references/review-template.md](references/review-template.md).
 
-At minimum, judge these categories:
-
-- money and operational reality
-- product clarity and movement
-- sales or monetization logic
-- leadership quality and follow-through
-- learning density for the user
-- exit risk and replaceability
-
-### 4. Convert events into founder lessons
-
-Do not stop at "red flag" or "looks fine." Extract what the user can learn from the event about:
-
-- product definition
-- user demand
-- pricing
-- go-to-market
-- team execution
-- founder behavior
-
-The user wants to eventually build and sell their own product. Keep orienting the analysis toward that end.
-
-### 5. Give a narrow recommendation
+## Recommendation States
 
 Choose one clear recommendation:
 
-- **Stay and keep extracting**
-- **Stay, but watch closely**
-- **Prepare exit while staying**
-- **Exit soon**
+- **Continue and invest**
+- **Continue, but monitor**
+- **Stay while building options**
+- **Prepare exit**
 
-Do not hedge unless facts are truly mixed. If uncertain, say what needs to be verified next.
-
-### 6. Write a dated report at the end
-
-At the end of each completed discussion, write a report into the skill directory.
-
-Default location:
-
-- `reports/YYYY-MM-DD.md`
-
-Report rule:
-
-- If the file for that date does not exist, create it.
-- If the file already exists, append a new session entry instead of overwriting.
-- If the environment cannot write files, output the report in chat and state that file writing was unavailable.
-- Do not write the report in the middle of an active interview.
-
-The report should preserve:
-
-- what the user described
-- what the user believed or worried about
-- what the agent observed
-- where the user's and agent's views matched or differed
-- the current recommendation
-- the next things to watch
-
-Use the template in [references/daily-report-template.md](references/daily-report-template.md).
+Do not hedge unless the facts are truly mixed. If uncertainty remains, state exactly what needs to be verified next.
 
 ## Output Format
 
-During discussion mode, keep replies short and question-led.
+### During the live discussion
+
+Keep replies short and question-led.
 
 Use this pattern:
-
-### During the discussion
 
 - brief read of the current signal
 - one concrete takeaway if obvious
@@ -227,35 +165,34 @@ Use this pattern:
 
 Example shape:
 
-- "Right now this looks like a mixed signal: the story sounds coherent, but I still cannot tell whether execution is real."
-- "The useful thing for you here is that you are watching leadership frame the business up close."
-- "Next question: after that conversation, what did they actually push forward, even if it was small?"
+- "Right now this looks mixed: the story is coherent, but I still cannot tell whether execution is real."
+- "The useful part for you is that you are seeing how leadership frames the business."
+- "Next question: after that conversation, what did they actually push forward?"
 
 ### When giving a summary or verdict
-
-Keep the output short, concrete, and non-therapeutic.
 
 Use this structure:
 
 ### Verdict
 
-One or two sentences on whether the startup is still worth staying in.
+One or two sentences on whether the company or role is still worth staying in.
 
 ### Evidence
 
 List the strongest signals driving the verdict.
 
-### What You Are Still Getting
+### Growth Return
 
-State what the user is still extracting:
+State what the user is still getting:
 
-- cash flow
-- product reps
+- compensation or stability
+- product exposure
 - business exposure
-- founder education
-- network or market understanding
+- leadership observation
+- skill growth
+- career signal
 
-### Founder Lessons
+### Key Lessons
 
 State the most valuable lessons hidden inside the recent events.
 
@@ -266,15 +203,30 @@ Give the smallest next action:
 - what to observe
 - what to document
 - what to ask
-- what would trigger exit preparation
+- what would trigger a stronger recommendation
+
+## Daily Report Writing
+
+At the end of each completed discussion, write a report into the skill directory.
+
+Default location:
+
+- `reports/YYYY-MM-DD.md`
+
+Report rules:
+
+- If the file for that date does not exist, create it.
+- If the file already exists, append a new session entry instead of overwriting.
+- Do not write the report in the middle of an active interview.
+- If the environment cannot write files, output the report in chat and say that file writing was unavailable.
+
+Use the template in [references/daily-report-template.md](references/daily-report-template.md).
 
 ## Report Writing Rules
 
 The report is part of the workflow, not an optional extra.
 
-When the conversation reaches a clear stopping point, the agent should write the report before ending.
-
-A clear stopping point usually means one of these:
+Write the report only when the conversation reaches a clear stopping point. A clear stopping point usually means one of these:
 
 - the user explicitly says "end", "summary", "write the report", or an equivalent closing instruction
 - the user asks for a summary
@@ -283,40 +235,19 @@ A clear stopping point usually means one of these:
 
 If the user is still answering questions or the investigation is obviously ongoing, do not write the report yet.
 
-Keep the report factual and compact. It should be useful for future review, not ornamental.
-
-For weekly or monthly synthesis, the review file should:
-
-- summarize the strongest repeating signals
-- summarize the most serious repeated risks
-- capture what the user is actually gaining from the job over time
-- state whether the current trend supports staying or preparing exit
-- make it easy to compare one period to the next
-
-## Summary Trigger
-
-Do not force a final conclusion too early.
-
-Give the full verdict when one of these is true:
-
-- the user explicitly asks for a verdict, summary, or recommendation
-- enough facts exist to make a grounded call
-- the conversation has already surfaced the key signals across money, product, leadership, and learning value
-
 ## Guardrails
 
 - Do not moralize.
-- Do not tell the user to trust the company.
+- Do not assume the company is good or bad by default.
 - Do not confuse charisma, founder talk, or HR smoothing with evidence.
-- Do not advise immediate exit just because the company is messy; early startups are often messy.
-- Do not advise staying just because the story sounds smart; look for product movement and money logic.
-- Prioritize reality over ideology.
-- Treat the company as a temporary platform the user is extracting value from, not as an identity.
+- Do not force the user to leave just because the company is messy.
+- Do not tell the user to stay just because the mission sounds strong.
+- Keep the focus on evidence, growth return, and decision quality.
+- Treat this as an ongoing career decision aid, not a loyalty test.
 
-## Reference
+## References
 
-For deeper daily or weekly assessments, red flags, learning extraction prompts, and a simple scorecard, read [references/assessment-framework.md](references/assessment-framework.md).
-
-For the report format, read [references/daily-report-template.md](references/daily-report-template.md).
-
-For weekly and monthly synthesis, read [references/review-template.md](references/review-template.md).
+- For deeper assessment logic, read [references/assessment-framework.md](references/assessment-framework.md).
+- For first-time setup and context capture, read [references/bootstrap-template.md](references/bootstrap-template.md).
+- For the daily report format, read [references/daily-report-template.md](references/daily-report-template.md).
+- For weekly and monthly synthesis, read [references/review-template.md](references/review-template.md).

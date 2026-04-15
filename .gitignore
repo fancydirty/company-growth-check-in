@@ -1,0 +1,4 @@
+context/*.md
+reports/*.md
+!context/.gitkeep
+!reports/.gitkeep

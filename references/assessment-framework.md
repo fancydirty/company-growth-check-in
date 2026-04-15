@@ -2,15 +2,15 @@
 
 Use this file when the user wants a deeper, more structured pass.
 
-## Core Principle
+## Core Question
 
-Judge the startup by this question:
+Judge the situation by asking:
 
-**Is this place still giving the user enough money, product exposure, business exposure, and founder education to justify staying for now?**
+**Is this company or role still giving the user enough stability, learning, exposure, and career value to justify staying for now?**
 
-The company does not need to be trustworthy. It needs to remain useful.
+The answer does not depend on whether the company sounds impressive. It depends on what the user is actually getting and what the role is actually becoming.
 
-## Six Categories
+## Five Categories
 
 Score each category as:
 
@@ -18,200 +18,127 @@ Score each category as:
 - `mixed`
 - `weak`
 
-### 1. Money And Operational Reality
+### 1. Operational Reality
 
 Look for:
 
-- salary paid on time
-- equipment or tooling actually purchased
-- team spending that matches the story
-- hiring pace that implies real runway
-- decisions that show the company can keep operating
+- salary and basic operations working as promised
+- access to tools, equipment, and support
+- sensible pace of execution
+- evidence that the company can continue operating
 
 Red flags:
 
 - delayed pay
-- repeated "equipment is coming" with no follow-through
-- tool access blocked by cost cutting
-- founders talking big while basic ops are underfunded
+- repeated operational promises with no follow-through
+- missing tools or blocked work due to avoidable chaos
+- big story, weak basics
 
-### 2. Product Clarity And Movement
+### 2. Product Or Business Movement
 
 Look for:
 
-- a clear problem statement
-- a definable target user
-- movement toward a shippable version
-- user feedback loops
-- fewer story-only meetings and more product evidence
+- a clear problem being solved
+- movement toward shipping, selling, or validating
+- user or customer feedback loops
+- fewer story-only meetings and more evidence
 
 Red flags:
 
-- product keeps changing identity
-- no one can state what success looks like
-- leaders confuse features with product
-- constant talk, no shipped artifacts
+- the product identity keeps drifting
+- nobody can say what success looks like
+- leaders confuse activity with progress
+- repeated plans with no visible movement
 
-### 3. Monetization Logic
-
-Look for:
-
-- a clear reason someone would pay
-- pricing logic that matches the audience
-- evidence of customer discovery
-- believable path from free or cheap product to paid service
-
-Red flags:
-
-- "we will get users first and monetize later" with no bridge
-- enterprise revenue hand-waved as inevitable
-- no idea who signs the contract or why
-- business model depends entirely on future investor money
-
-### 4. Leadership Quality And Follow-Through
+### 3. Leadership Quality
 
 Look for:
 
-- leaders who can explain the why behind priorities
-- consistency between what leaders say and what they fund
+- leaders who can explain why something matters
+- consistency between what they say and what they fund
 - decisions that survive beyond one excited conversation
-- useful disagreement, not chaos theater
+- useful disagreement instead of avoidable chaos
 
 Red flags:
 
-- big claims with no resourcing
-- constant pivoting based on mood
-- executives who tell different stories
-- optics and hype consistently outranking execution
+- constant narrative shifts
+- hype regularly outranking execution
+- different leaders telling different stories
+- resourcing that does not match stated priorities
 
-### 5. Learning Density For The User
+### 4. Learning Density
 
 Look for:
 
-- exposure to product definition
-- exposure to launch, validation, or sales
-- chances to watch leadership make tradeoffs
-- new knowledge the user could not get from solo projects
+- exposure to product thinking
+- exposure to business or customer reality
+- chances to watch tradeoffs being made
+- growth that would be hard to get from solo projects alone
 
 Red flags:
 
-- the user is only doing disposable labor
-- the user sees no customer, no business, no product reasoning
-- work is all chaos, no pattern
+- the user is doing mostly disposable labor
 - the same shallow tasks repeat without growth
+- the user sees no customer, no business logic, and no product reasoning
+- stress is high but signal is low
 
-### 6. Exit Risk And Replaceability
+### 5. Optionality And Career Return
 
 Look for:
 
-- the user can leave without catastrophic damage
-- the user keeps independent records of achievements
-- the user is gaining resume-worthy evidence
-- the user is not being trapped by vague promises
+- portable achievements
+- resume-worthy evidence
+- stronger judgment, communication, or execution skills
+- the ability to leave without collapse
 
 Red flags:
 
-- no concrete learning, only exhaustion
-- user has nothing portable to show for the time
-- company is consuming attention faster than it gives value
-- user keeps staying on hope alone
+- the user is getting tired without gaining assets
+- the role is consuming time faster than it creates opportunity
+- the user is staying mainly because of inertia
 
 ## Decision Rule
 
 Use the scores to choose one recommendation.
 
-### Stay and keep extracting
+### Continue and invest
 
 Use when:
 
 - learning density is `strong`
-- at least two of money, product, monetization, leadership are `strong`
-- exit risk is manageable
+- at least two other categories are `strong`
+- the user's growth return is clearly positive
 
-### Stay, but watch closely
-
-Use when:
-
-- learning density is `strong` or `mixed`
-- company signals are mixed
-- there is still meaningful founder education or product exposure
-
-### Prepare exit while staying
+### Continue, but monitor
 
 Use when:
 
-- learning density is slipping
-- too many signals are `weak`
-- the user still needs the paycheck for now
+- the role still has real value
+- signals are mixed
+- the user is still learning enough to justify staying for now
 
-In this mode, advise the user to keep working while quietly rebuilding optionality.
-
-### Exit soon
+### Stay while building options
 
 Use when:
 
-- money or operational reality is `weak`
+- value is declining or unstable
+- the user still needs the role for now
+- optionality should be rebuilt in parallel
+
+### Prepare exit
+
+Use when:
+
+- operational reality is `weak`
 - learning density is `weak`
-- product and monetization are both `weak`
-- the user is mostly absorbing chaos instead of learning from it
+- the user is no longer getting meaningful return from staying
 
-## Daily Extraction Prompts
+## Useful Questions
 
-Use these to convert each day into useful founder knowledge:
-
-- What did leadership believe would matter today?
-- What actually moved the product closer to revenue?
-- What stayed vague?
-- What did this reveal about how products get defined in real life?
-- What did this reveal about what customers might actually pay for?
-- What did this reveal about how founders tell stories upward and downward?
-- What would I copy later?
-- What would I never repeat in my own company?
-
-## Weekly Review Template
-
-Use this when the user asks for a weekly checkpoint.
-
-### This Week's Verdict
-
-One sentence.
-
-### Best Signals
-
-- signal 1
-- signal 2
-- signal 3
-
-### Worst Signals
-
-- signal 1
-- signal 2
-- signal 3
-
-### What I Learned That Solo Projects Would Not Teach Me
-
-- lesson 1
-- lesson 2
-- lesson 3
-
-### What The Company Still Gives Me
-
-- cash flow
-- product reps
-- leadership observation
-- customer or sales exposure
-
-### What I Need To Verify Next Week
-
-- open question 1
-- open question 2
-- open question 3
-
-### Current Mode
-
-Choose one:
-
-- stay and keep extracting
-- stay, but watch closely
-- prepare exit while staying
-- exit soon
+- What changed this week that made the company easier to judge?
+- What moved the work closer to customers, users, or revenue?
+- What remained vague?
+- What did this reveal about leadership quality?
+- What did this reveal about the user's real growth?
+- What would be worth copying in a future team?
+- What would not be worth repeating?

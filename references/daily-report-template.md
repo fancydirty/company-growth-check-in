@@ -12,10 +12,6 @@ Use:
 
 `## Session HH-MM`
 
-Example:
-
-`## Session 21-40`
-
 ## Template
 
 ```md
@@ -34,30 +30,30 @@ One sentence on what triggered the discussion.
 ### User View
 
 - what the user believes
-- what the user worries about
-- what the user wants from the job right now
+- what the user is uncertain about
+- what the user wants from the role right now
 
 ### Agent View
 
 - strongest signal
 - main risk
-- main reason to stay or prepare exit
+- main reason to continue or reconsider
 
 ### Alignment And Tension
 
 - where the user and agent agree
-- where the user and agent see things differently
+- where the user and agent differ
 
 ### Recommendation
 
 Choose one:
 
-- stay and keep extracting
-- stay, but watch closely
-- prepare exit while staying
-- exit soon
+- continue and invest
+- continue, but monitor
+- stay while building options
+- prepare exit
 
-### Founder Lessons
+### Key Lessons
 
 - lesson 1
 - lesson 2
@@ -73,7 +69,6 @@ Choose one:
 ## Writing Guidance
 
 - Be faithful to what the user actually said.
-- Do not rewrite the user's motives into something softer.
-- Do not turn the report into a motivational speech.
-- Preserve disagreements clearly when they matter.
-- Make the report useful for future weekly or monthly reviews.
+- Keep the report compact and useful.
+- Preserve disagreement clearly when it matters.
+- Write for future review, not for performance.
