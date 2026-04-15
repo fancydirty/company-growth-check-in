@@ -152,6 +152,20 @@ If you want a softer setup, use heartbeat plus a small `HEARTBEAT.md` rule such 
 If it is after 18:30 local time on a weekday and today's work review has not happened yet, nudge me to start $company-growth-check-in.
 ```
 
+Example `cron` command:
+
+```bash
+openclaw cron add \
+  --name "Daily work review" \
+  --cron "30 18 * * 1-5" \
+  --tz "Asia/Hong_Kong" \
+  --session main \
+  --system-event "Start $company-growth-check-in with the first question and help me review today's work." \
+  --wake now
+```
+
+If you want exact channel delivery instead of a main-session reminder, use an isolated cron job with `--announce`, `--channel`, and `--to`.
+
 ### Hermes Agent
 
 Hermes Agent uses scheduled cron jobs for this kind of proactive workflow.
@@ -160,6 +174,18 @@ Example idea:
 
 ```text
 Every weekday at 18:30, ask me to start $company-growth-check-in and guide me through a short review of today's work.
+```
+
+Example `/cron` command in chat:
+
+```text
+/cron add "every weekday at 18:30" "Ask me to start $company-growth-check-in and guide me through a short review of today's work." --skill company-growth-check-in
+```
+
+Example standalone CLI command:
+
+```bash
+hermes cron create "every weekday at 18:30" "Ask me to start $company-growth-check-in and guide me through a short review of today's work." --skill company-growth-check-in --name "Daily work review"
 ```
 
 ### Suggested Agent Behavior

@@ -70,6 +70,8 @@ Recommendation rules:
 - For an exact daily time, prefer cron-style scheduling.
 - For OpenClaw-style soft periodic awareness, heartbeat is also a good fit.
 - Keep the reminder prompt simple: remind the user to start `$company-growth-check-in` and begin by asking the first question.
+- In OpenClaw, prefer `cron` for fixed daily review times and `heartbeat` for approximate nudges.
+- In Hermes, prefer `cron` and attach the `company-growth-check-in` skill to the scheduled job when possible.
 
 ## Bootstrap Mode
 
