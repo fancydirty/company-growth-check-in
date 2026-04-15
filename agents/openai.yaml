@@ -1,0 +1,4 @@
+interface:
+  display_name: "Startup Reality Check"
+  short_description: "Assess whether a startup job is still worth exploiting."
+  default_prompt: "Use $startup-reality-check. I'll tell you what happened today, and you tell me whether this startup is still worth staying in."
