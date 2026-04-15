@@ -147,7 +147,7 @@ Example idea:
 At 18:30 every weekday, remind me to run $company-growth-check-in and start the check-in by asking the first question.
 ```
 
-If you want a softer setup, use heartbeat plus a small `HEARTBEAT.md` rule such as:
+If you want a softer setup, use heartbeat with a small `HEARTBEAT.md` file or, better, a `tasks:` block:
 
 ```text
 If it is after 18:30 local time on a weekday and today's work review has not happened yet, nudge me to start $company-growth-check-in.
@@ -172,6 +172,7 @@ or, if your workspace is customized:
 ```
 
 Keep the file small. If no reminder is needed, the heartbeat should reply with `HEARTBEAT_OK`.
+With the bundled `tasks:` block, OpenClaw only runs the due reminder check and can skip the model call entirely with `reason=no-tasks-due` when nothing is due.
 
 Example `cron` command:
 
